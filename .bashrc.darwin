@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Git
+# ---
+
+export GIT_COMPLETION="/usr/local/etc/bash_completion.d/git-completion.bash"
+export GIT_PROMPT="/usr/local/etc/bash_completion.d/git-prompt.sh"
+
+# Homebrew
+# --------
+
+export PATH="/usr/local/bin:$PATH"
+
+# npm
+# ---
+
+export PATH="/usr/local/share/npm/bin:$PATH"

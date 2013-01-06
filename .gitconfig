@@ -1,0 +1,15 @@
+[alias] 
+	br = branch 
+	co = checkout 
+	st = status 
+[color] 
+	ui = auto 
+[core] 
+	excludesfile = ~/.gitignore
+[format] 
+	numbered = true 
+[rerere] 
+	enabled = true 
+[user] 
+	name = Jussi Virtanen 
+	email = jussi.k.virtanen@gmail.com 

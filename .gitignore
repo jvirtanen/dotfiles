@@ -1,0 +1,16 @@
+# Vim
+# ---
+
+*.swo
+*.swp
+.netrw*
+
+# Finder
+# ------
+
+.DS_Store
+
+# Exuberant Ctags
+# ---------------
+
+tags

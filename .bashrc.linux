@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Git
+# ---
+
+export GIT_COMPLETION="/etc/bash_completion.d/git"
+export GIT_PROMPT=$GIT_COMPLETION
