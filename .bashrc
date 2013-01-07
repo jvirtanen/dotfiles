@@ -29,7 +29,6 @@ export EDITOR="/usr/bin/vim"
 
 alias du="du -h"
 alias ll="ls -hl"
-alias ls="ls -G"
 alias tags="ctags -R"
 
 # Operating System
