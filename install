@@ -39,7 +39,7 @@ function link_file {
   local to="$HOME/$name"
 
   if [ ! -e $to -o $force_flag -ne 0 ]; then
-    ln -fhs $from $to
+    ln -fns $from $to
   else
     echo "install: $to: File exists"
   fi
