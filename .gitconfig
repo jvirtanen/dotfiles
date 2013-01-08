@@ -8,6 +8,8 @@
 	excludesfile = ~/.gitignore
 [format] 
 	numbered = true 
+[push]
+	default = current
 [rerere] 
 	enabled = true 
 [user] 
