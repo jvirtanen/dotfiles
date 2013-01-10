@@ -82,9 +82,9 @@ link_file ".tmux.conf"
 link_file ".vim"
 link_file ".vimrc"
 
-PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim"
+VIM_PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim"
 
-download_file $PATHOGEN_URL ".vim/autoload/pathogen.vim"
+download_file $VIM_PATHOGEN_URL ".vim/autoload/pathogen.vim"
 
 VIM_FUGITIVE_URL="git://github.com/tpope/vim-fugitive.git"
 VIM_LIQUID_URL="git://github.com/tpope/vim-liquid.git"
