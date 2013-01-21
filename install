@@ -95,12 +95,14 @@ VIM_PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/path
 
 download_file $VIM_PATHOGEN_URL ".vim/autoload/pathogen.vim"
 
+VIM_CLOJURE_STATIC_URL="git://github.com/guns/vim-clojure-static.git"
 VIM_FUGITIVE_URL="git://github.com/tpope/vim-fugitive.git"
 VIM_LIQUID_URL="git://github.com/tpope/vim-liquid.git"
 VIM_MARKDOWN_URL="git://github.com/tpope/vim-markdown.git"
 VIM_SCALA_URL="git://github.com/derekwyatt/vim-scala.git"
 VIM_SLEUTH_URL="git://github.com/tpope/vim-sleuth.git"
 
+clone_repository $VIM_CLOJURE_STATIC_URL ".vim/bundle/vim-clojure-static"
 clone_repository $VIM_FUGITIVE_URL ".vim/bundle/vim-fugitive"
 clone_repository $VIM_LIQUID_URL ".vim/bundle/vim-liquid"
 clone_repository $VIM_MARKDOWN_URL ".vim/bundle/vim-markdown"
