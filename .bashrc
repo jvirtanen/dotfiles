@@ -66,6 +66,11 @@ if [ -x $RBENV ]; then
   eval "$(rbenv init -)"
 fi
 
+# virtualenv
+# ----------
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 # External
 # --------
 
