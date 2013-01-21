@@ -82,6 +82,15 @@ link_file ".tmux.conf"
 link_file ".vim"
 link_file ".vimrc"
 
+mkdir -p "$HOME/bin"
+
+LEIN_URL="https://raw.github.com/technomancy/leiningen/stable/bin/lein"
+
+download_file $LEIN_URL "bin/lein"
+link_file "bin/lein"
+
+chmod a+x "bin/lein"
+
 VIM_PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim"
 
 download_file $VIM_PATHOGEN_URL ".vim/autoload/pathogen.vim"
