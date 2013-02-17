@@ -29,6 +29,7 @@ export EDITOR="/usr/bin/vim"
 
 alias du="du -h"
 alias ll="ls -hl"
+alias serve="python -m SimpleHTTPServer"
 alias tags="ctags -R"
 
 # Operating System
