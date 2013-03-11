@@ -16,6 +16,15 @@ export GIT_PROMPT="/usr/local/etc/bash_completion.d/git-prompt.sh"
 
 export PATH="/usr/local/bin:$PATH"
 
+# JVM
+# ---
+
+USR_LIBEXEC_JAVA_HOME="/usr/libexec/java_home"
+
+if [ -x $USR_LIBEXEC_JAVA_HOME ]; then
+  export JAVA_HOME="`$USR_LIBEXEC_JAVA_HOME`"
+fi
+
 # npm
 # ---
 
