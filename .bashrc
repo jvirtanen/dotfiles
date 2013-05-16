@@ -27,6 +27,7 @@ export EDITOR="/usr/bin/vim"
 # Aliases
 # -------
 
+alias be="bundle exec"
 alias du="du -h"
 alias ll="ls -hl"
 alias serve="python -m SimpleHTTPServer"
