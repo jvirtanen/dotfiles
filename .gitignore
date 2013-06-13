@@ -21,6 +21,11 @@ vendor/bundle
 
 tags
 
+# rbenv
+# -----
+
+.ruby-version
+
 # virtualenv
 # ----------
 
