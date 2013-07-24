@@ -6,6 +6,8 @@
 	ui = auto 
 [core] 
 	excludesfile = ~/.gitignore
+[diff]
+	algorithm = patience
 [format] 
 	numbered = true 
 [push]
