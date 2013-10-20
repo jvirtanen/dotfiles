@@ -31,6 +31,7 @@ autocmd BufRead,BufNewFile *.ronn set filetype=markdown
 autocmd BufRead,BufNewFile *.sbt set filetype=scala
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 autocmd BufRead,BufNewFile Podfile set filetype=ruby
+autocmd BufRead,BufNewFile Procfile set filetype=ruby
 autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
 
 " Search
