@@ -9,6 +9,11 @@ vendor/bundle
 
 *.dSYM/
 
+# Foreman
+# -------
+
+.env
+
 # Vim
 # ---
 
