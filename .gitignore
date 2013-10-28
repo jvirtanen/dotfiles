@@ -1,7 +1,6 @@
 # Bundler
 # -------
 
-.bundle/
 vendor/bundle
 
 # Clang/GCC
