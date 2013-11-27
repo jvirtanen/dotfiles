@@ -2,20 +2,20 @@
 
 which curl >/dev/null
 if [ $? -ne 0 ]; then
-  echo "install: curl: Command not found"
+  echo "install.bash: curl: Command not found"
   exit 1
 fi
 
 which git >/dev/null
 if [ $? -ne 0 ]; then
-  echo "install: git: Command not found"
+  echo "install.bash: git: Command not found"
   exit 1
 fi
 
 set -e
 
 function usage {
-  echo "Usage: install [-f]"
+  echo "Usage: install.bash [-f]"
   exit 2
 }
 
@@ -41,7 +41,7 @@ function link_file {
   if [ ! -e $to -o $force_flag -ne 0 ]; then
     ln -fns $from $to
   else
-    echo "install: $to: File exists"
+    echo "install.bash: $to: File exists"
   fi
 }
 
@@ -52,7 +52,7 @@ function download_file {
   if [ ! -e $to -o $force_flag -ne 0 ]; then
     curl -Ss -o $to $from
   else
-    echo "install: $to: File exists"
+    echo "install.bash: $to: File exists"
   fi
 }
 
