@@ -50,7 +50,7 @@ function download_file {
   local to=$2
 
   if [ ! -e $to -o $force_flag -ne 0 ]; then
-    curl -Ss -o $to $from
+    curl --silent --show-error --output $to $from
   else
     echo "install.bash: $to: File exists"
   fi
@@ -61,11 +61,11 @@ function clone_repository {
   local to=$2
 
   if [ ! -e $to ]; then
-    git clone -q $from $to
+    git clone --quiet $from $to
   else
     cd $to
-    git fetch -q
-    git reset -q --hard origin/master
+    git fetch --quiet
+    git reset --quiet --hard origin/master
     cd $OLDPWD
   fi
 }
