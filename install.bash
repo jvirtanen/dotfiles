@@ -84,10 +84,8 @@ function clone_repository {
   if [ ! -e $to ]; then
     git clone --quiet $from $to
   else
-    cd $to
-    git fetch --quiet
-    git reset --quiet --hard origin/master
-    cd $OLDPWD
+    git -C $to fetch --quiet
+    git -C $to reset --quiet --hard origin/master
   fi
 }
 
