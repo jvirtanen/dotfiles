@@ -35,13 +35,13 @@ done
 function link_file {
   local name=$1
 
-  local from="$PWD/$name"
-  local to="$HOME/$name"
+  local from="$HOME/$name"
+  local to="$PWD/$name"
 
-  if [ ! -e $to -o $force_flag -ne 0 ]; then
-    ln -fns $from $to
+  if [ ! -e $from -o $force_flag -ne 0 ]; then
+    ln -fns $to $from
   else
-    echo "install.bash: $to: File exists"
+    echo "install.bash: $from: File exists"
   fi
 }
 
