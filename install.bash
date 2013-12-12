@@ -15,22 +15,37 @@ fi
 set -e
 
 function usage {
-  echo "Usage: install.bash [-f]"
+  echo "Usage: install.bash [-f] [-s]"
   exit 2
 }
 
 force_flag=0
+solarized_flag=0
 
-while getopts :f opt; do
+while getopts :fs opt; do
   case $opt in
   f)
     force_flag=1
+    ;;
+  s)
+    solarized_flag=1
     ;;
   ?)
     usage
     ;;
   esac
 done
+
+function copy_file {
+  local from="$1"
+  local to="$HOME/$2"
+
+  if [ ! -e $to -o $force_flag -ne 0 ]; then
+    cp -f $from $to
+  else
+    echo "install.bash: $to: File exists"
+  fi
+}
 
 function link_file {
   local name=$1
@@ -83,6 +98,10 @@ link_file ".tmux.conf"
 link_file ".vim"
 link_file ".vimrc"
 
+if [ $solarized_flag -ne 0 ]; then
+  copy_file ".vimrc.host.solarized" ".vimrc.host"
+fi
+
 VIM_PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim"
 
 download_file $VIM_PATHOGEN_URL ".vim/autoload/pathogen.vim"
@@ -106,3 +125,9 @@ clone_repository $VIM_OCTAVE_URL ".vim/bundle/vim-octave"
 clone_repository $VIM_RUBY_URL ".vim/bundle/vim-ruby"
 clone_repository $VIM_SCALA_URL ".vim/bundle/vim-scala"
 clone_repository $VIM_SLEUTH_URL ".vim/bundle/vim-sleuth"
+
+if [ $solarized_flag -ne 0 ]; then
+  VIM_COLORS_SOLARIZED="git://github.com/altercation/vim-colors-solarized.git"
+
+  clone_repository $VIM_COLORS_SOLARIZED ".vim/bundle/vim-colors-solarized"
+fi
