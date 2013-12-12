@@ -24,11 +24,11 @@ force_flag=0
 while getopts :f opt; do
   case $opt in
   f)
-     force_flag=1
-     ;;
+    force_flag=1
+    ;;
   ?)
-     usage
-     ;;
+    usage
+    ;;
   esac
 done
 
