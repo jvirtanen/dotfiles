@@ -115,6 +115,7 @@ VIM_OCTAVE_URL="git://github.com/jvirtanen/vim-octave.git"
 VIM_RUBY_URL="git://github.com/vim-ruby/vim-ruby.git"
 VIM_SCALA_URL="git://github.com/derekwyatt/vim-scala.git"
 VIM_SLEUTH_URL="git://github.com/tpope/vim-sleuth.git"
+VIM_VINEGAR_URL="git://github.com/tpope/vim-vinegar.git"
 
 clone_repository $HTML5_VIM_URL ".vim/bundle/html5.vim"
 clone_repository $VIM_FUGITIVE_URL ".vim/bundle/vim-fugitive"
@@ -125,6 +126,7 @@ clone_repository $VIM_OCTAVE_URL ".vim/bundle/vim-octave"
 clone_repository $VIM_RUBY_URL ".vim/bundle/vim-ruby"
 clone_repository $VIM_SCALA_URL ".vim/bundle/vim-scala"
 clone_repository $VIM_SLEUTH_URL ".vim/bundle/vim-sleuth"
+clone_repository $VIM_VINEGAR_URL ".vim/bundle/vim-vinegar"
 
 if [ $solarized_flag -ne 0 ]; then
   VIM_COLORS_SOLARIZED="git://github.com/altercation/vim-colors-solarized.git"
