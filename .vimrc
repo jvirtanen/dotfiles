@@ -9,6 +9,8 @@ call pathogen#infect()
 set nocompatible
 set ruler
 
+set backspace=indent,eol,start
+
 filetype plugin on
 
 " Syntax
