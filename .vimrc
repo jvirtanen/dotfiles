@@ -29,7 +29,6 @@ set autoindent
 " ---------
 
 autocmd BufRead,BufNewFile *.json set filetype=javascript
-autocmd BufRead,BufNewFile *.m set filetype=octave
 autocmd BufRead,BufNewFile *.podspec set filetype=ruby
 autocmd BufRead,BufNewFile *.ronn set filetype=markdown
 autocmd BufRead,BufNewFile *.sbt set filetype=scala
