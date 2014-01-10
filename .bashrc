@@ -39,7 +39,7 @@ alias tags="ctags -R"
 # Operating System
 # ----------------
 
-export OS="`uname -s`"
+export OS=$(uname -s)
 
 if [ $OS = "Darwin" ]; then
   source "$HOME/.bashrc.darwin"
@@ -74,7 +74,7 @@ export PATH="$GOPATH/bin:$PATH"
 RBENV="$HOME/.rbenv/bin/rbenv"
 
 if [ -x $RBENV ]; then
-  export PATH="`dirname $RBENV`:$PATH"
+  export PATH="$(dirname $RBENV):$PATH"
   eval "$(rbenv init -)"
 fi
 

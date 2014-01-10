@@ -22,7 +22,7 @@ export PATH="/usr/local/bin:$PATH"
 USR_LIBEXEC_JAVA_HOME="/usr/libexec/java_home"
 
 if [ -x $USR_LIBEXEC_JAVA_HOME ]; then
-  export JAVA_HOME="`$USR_LIBEXEC_JAVA_HOME`"
+  export JAVA_HOME=$($USR_LIBEXEC_JAVA_HOME)
 fi
 
 # npm
