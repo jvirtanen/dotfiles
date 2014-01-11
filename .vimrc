@@ -30,7 +30,6 @@ set autoindent
 
 autocmd BufRead,BufNewFile *.podspec set filetype=ruby
 autocmd BufRead,BufNewFile *.ronn set filetype=markdown
-autocmd BufRead,BufNewFile *.sbt set filetype=scala
 autocmd BufRead,BufNewFile Podfile set filetype=ruby
 autocmd BufRead,BufNewFile Procfile set filetype=yaml
 
