@@ -25,6 +25,11 @@ if [ -x $USR_LIBEXEC_JAVA_HOME ]; then
   export JAVA_HOME=$($USR_LIBEXEC_JAVA_HOME)
 fi
 
+# Mercurial
+# ---------
+
+export HG_COMPLETION="/usr/local/etc/bash_completion.d/hg-completion.bash"
+
 # npm
 # ---
 
