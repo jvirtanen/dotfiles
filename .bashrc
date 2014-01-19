@@ -35,6 +35,7 @@ alias du="du -h"
 alias ll="ls -hl"
 alias serve="python -m SimpleHTTPServer"
 alias tags="ctags -R"
+alias vi="vim"
 
 # Operating System
 # ----------------
