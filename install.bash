@@ -39,7 +39,7 @@ done
 function create_directory {
   local name=$1
 
-  mkdir -p $name
+  mkdir -p "$HOME/$name"
 }
 
 function copy_file {
