@@ -117,7 +117,6 @@ VIM_PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/path
 download_file $VIM_PATHOGEN_URL ".vim/autoload/pathogen.vim"
 
 HTML5_VIM_URL="git://github.com/othree/html5.vim.git"
-VIM_COCOAPODS_URL="git://github.com/jvirtanen/vim-cocoapods.git"
 VIM_FUGITIVE_URL="git://github.com/tpope/vim-fugitive.git"
 VIM_GOLANG_URL="git://github.com/jnwhiteh/vim-golang.git"
 VIM_JSON_URL="git://github.com/elzr/vim-json.git"
@@ -130,7 +129,6 @@ VIM_SLEUTH_URL="git://github.com/tpope/vim-sleuth.git"
 VIM_VINEGAR_URL="git://github.com/tpope/vim-vinegar.git"
 
 clone_repository $HTML5_VIM_URL ".vim/bundle/html5.vim"
-clone_repository $VIM_COCOAPODS_URL ".vim/bundle/vim-cocoapods"
 clone_repository $VIM_FUGITIVE_URL ".vim/bundle/vim-fugitive"
 clone_repository $VIM_GOLANG_URL ".vim/bundle/vim-golang"
 clone_repository $VIM_JSON_URL ".vim/bundle/vim-json"
