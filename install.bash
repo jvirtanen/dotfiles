@@ -71,7 +71,7 @@ function download_file {
   local to=$2
 
   if [ ! -e $to -o $force_flag -ne 0 ]; then
-    curl --silent --show-error --output $to $from
+    curl --location --silent --show-error --output $to $from
   else
     echo "install.bash: $to: File exists"
   fi
