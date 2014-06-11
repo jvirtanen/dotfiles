@@ -116,18 +116,18 @@ VIM_PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/path
 
 download_file $VIM_PATHOGEN_URL ".vim/autoload/pathogen.vim"
 
-HTML5_VIM_URL="git://github.com/othree/html5.vim.git"
-VIM_BYTEMAN_URL="git://github.com/jvirtanen/vim-byteman.git"
-VIM_FUGITIVE_URL="git://github.com/tpope/vim-fugitive.git"
-VIM_GOLANG_URL="git://github.com/jnwhiteh/vim-golang.git"
-VIM_JSON_URL="git://github.com/elzr/vim-json.git"
-VIM_LIQUID_URL="git://github.com/tpope/vim-liquid.git"
-VIM_MARKDOWN_URL="git://github.com/tpope/vim-markdown.git"
-VIM_OCTAVE_URL="git://github.com/jvirtanen/vim-octave.git"
-VIM_RUBY_URL="git://github.com/vim-ruby/vim-ruby.git"
-VIM_SCALA_URL="git://github.com/derekwyatt/vim-scala.git"
-VIM_SLEUTH_URL="git://github.com/tpope/vim-sleuth.git"
-VIM_VINEGAR_URL="git://github.com/tpope/vim-vinegar.git"
+HTML5_VIM_URL="https://github.com/othree/html5.vim.git"
+VIM_BYTEMAN_URL="https://github.com/jvirtanen/vim-byteman.git"
+VIM_FUGITIVE_URL="https://github.com/tpope/vim-fugitive.git"
+VIM_GOLANG_URL="https://github.com/jnwhiteh/vim-golang.git"
+VIM_JSON_URL="https://github.com/elzr/vim-json.git"
+VIM_LIQUID_URL="https://github.com/tpope/vim-liquid.git"
+VIM_MARKDOWN_URL="https://github.com/tpope/vim-markdown.git"
+VIM_OCTAVE_URL="https://github.com/jvirtanen/vim-octave.git"
+VIM_RUBY_URL="https://github.com/vim-ruby/vim-ruby.git"
+VIM_SCALA_URL="https://github.com/derekwyatt/vim-scala.git"
+VIM_SLEUTH_URL="https://github.com/tpope/vim-sleuth.git"
+VIM_VINEGAR_URL="https://github.com/tpope/vim-vinegar.git"
 
 clone_repository $HTML5_VIM_URL ".vim/bundle/html5.vim"
 clone_repository $VIM_BYTEMAN_URL ".vim/bundle/vim-byteman"
@@ -143,7 +143,7 @@ clone_repository $VIM_SLEUTH_URL ".vim/bundle/vim-sleuth"
 clone_repository $VIM_VINEGAR_URL ".vim/bundle/vim-vinegar"
 
 if [ $solarized_flag -ne 0 ]; then
-  VIM_COLORS_SOLARIZED="git://github.com/altercation/vim-colors-solarized.git"
+  VIM_COLORS_SOLARIZED="https://github.com/altercation/vim-colors-solarized.git"
 
   clone_repository $VIM_COLORS_SOLARIZED ".vim/bundle/vim-colors-solarized"
 fi
