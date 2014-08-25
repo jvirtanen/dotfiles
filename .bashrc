@@ -86,6 +86,15 @@ if [ -x $RBENV ]; then
   eval "$(rbenv init -)"
 fi
 
+# OPAM
+# ----
+
+OPAM_INIT="$HOME/.opam/opam-init/init.sh"
+
+if [ -f $OPAM_INIT ]; then
+  source $OPAM_INIT 2>&1 1>/dev/null
+fi
+
 # virtualenv
 # ----------
 
