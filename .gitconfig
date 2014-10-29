@@ -8,6 +8,7 @@
 	excludesfile = ~/.gitignore
 [diff]
 	algorithm = patience
+	renames = true
 [format] 
 	numbered = true 
 [push]
