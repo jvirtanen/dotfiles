@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-which curl >/dev/null
+command -v curl >/dev/null
 if [ $? -ne 0 ]; then
   echo "install.bash: curl: Command not found"
   exit 1
 fi
 
-which git >/dev/null
+command -v git >/dev/null
 if [ $? -ne 0 ]; then
   echo "install.bash: git: Command not found"
   exit 1

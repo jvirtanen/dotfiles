@@ -22,7 +22,7 @@ alias date="date +\"%Y-%m-%d %T\""
 # Editor
 # ------
 
-export EDITOR=$(which vim)
+export EDITOR=$(command -v vim)
 
 # Aliases
 # -------
