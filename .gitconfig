@@ -17,6 +17,8 @@
 	enabled = true 
 [status]
 	showUntrackedFiles = all
+[tag]
+	sort = version:refname
 [user] 
 	name = Jussi Virtanen 
 	email = jussi.k.virtanen@gmail.com 
