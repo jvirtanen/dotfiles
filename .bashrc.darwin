@@ -13,6 +13,7 @@ fi
 alias ls="ls -G"
 alias open="$REATTACH_TO_USER_NAMESPACE open"
 alias textedit="open -a TextEdit"
+alias vlc="open -a VLC"
 
 # Git
 # ---
