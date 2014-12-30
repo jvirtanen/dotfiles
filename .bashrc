@@ -69,13 +69,6 @@ export GOPATH="$HOME/go"
 
 export PATH="$GOPATH/bin:$PATH"
 
-# Mercurial
-# ---------
-
-if [ ! -z $HG_COMPLETION -a -r $HG_COMPLETION ]; then
-  source $HG_COMPLETION
-fi
-
 # rbenv
 # -----
 

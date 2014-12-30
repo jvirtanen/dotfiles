@@ -10,8 +10,3 @@ alias ls="ls --color=auto"
 
 export GIT_COMPLETION="/etc/bash_completion.d/git"
 export GIT_PROMPT=$GIT_COMPLETION
-
-# Mercurial
-# ---------
-
-export HG_COMPLETION="/etc/bash_completion.d/mercurial"
