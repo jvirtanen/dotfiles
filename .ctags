@@ -1,6 +1,0 @@
---langdef=Scala
---langmap=Scala:.scala
---regex-Scala=/class[ \t]+([^ \t\(\[]+)/\1/c,classes/
---regex-Scala=/object[ \t]+([^ \t]+)/\1/o,objects/
---regex-Scala=/trait[ \t]+([^ \t\[]+)/\1/t,traits/
---regex-Scala=/type[ \t]+([^ \t\[]+)/\1/a,types/
