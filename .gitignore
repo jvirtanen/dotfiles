@@ -30,8 +30,8 @@ vendor/bundle
 
 tags
 
-# rbenv
-# -----
+# chruby
+# ------
 
 .ruby-version
 

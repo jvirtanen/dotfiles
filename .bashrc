@@ -76,16 +76,6 @@ export GOPATH="$HOME/go"
 
 export PATH="$GOPATH/bin:$PATH"
 
-# rbenv
-# -----
-
-RBENV="$HOME/.rbenv/bin/rbenv"
-
-if [ -x $RBENV ]; then
-  export PATH="$(dirname $RBENV):$PATH"
-  eval "$(rbenv init -)"
-fi
-
 # virtualenv
 # ----------
 
