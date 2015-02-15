@@ -12,7 +12,7 @@ fi
 
 alias ls="ls -G"
 alias open="$REATTACH_TO_USER_NAMESPACE open"
-alias textedit="open -a TextEdit"
+alias textedit="open -e"
 alias vlc="open -a VLC"
 
 # chruby
