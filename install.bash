@@ -14,7 +14,7 @@ fi
 
 set -e
 
-function usage {
+usage() {
   echo "Usage: install.bash [-f] [-s]"
   exit 2
 }
@@ -36,13 +36,13 @@ while getopts :fs opt; do
   esac
 done
 
-function create_directory {
+create_directory() {
   local name=$1
 
   mkdir -p "$HOME/$name"
 }
 
-function copy_file {
+copy_file() {
   local from="$1"
   local to="$HOME/$2"
 
@@ -53,7 +53,7 @@ function copy_file {
   fi
 }
 
-function link_file {
+link_file() {
   local name=$1
 
   local from="$HOME/$name"
@@ -66,7 +66,7 @@ function link_file {
   fi
 }
 
-function download_file {
+download_file() {
   local from=$1
   local to=$2
 
@@ -77,7 +77,7 @@ function download_file {
   fi
 }
 
-function clone_repository {
+clone_repository() {
   local from=$1
   local to=$2
 
