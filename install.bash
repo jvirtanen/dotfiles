@@ -123,7 +123,6 @@ VIM_LIQUID_URL="https://github.com/tpope/vim-liquid.git"
 VIM_MARKDOWN_URL="https://github.com/tpope/vim-markdown.git"
 VIM_RUBY_URL="https://github.com/vim-ruby/vim-ruby.git"
 VIM_SLEUTH_URL="https://github.com/tpope/vim-sleuth.git"
-VIM_TOML_URL="https://github.com/cespare/vim-toml.git"
 VIM_VINEGAR_URL="https://github.com/tpope/vim-vinegar.git"
 
 clone_repository $HTML5_VIM_URL ".vim/bundle/html5.vim"
@@ -136,7 +135,6 @@ clone_repository $VIM_LIQUID_URL ".vim/bundle/vim-liquid"
 clone_repository $VIM_MARKDOWN_URL ".vim/bundle/vim-markdown"
 clone_repository $VIM_RUBY_URL ".vim/bundle/vim-ruby"
 clone_repository $VIM_SLEUTH_URL ".vim/bundle/vim-sleuth"
-clone_repository $VIM_TOML_URL ".vim/bundle/vim-toml"
 clone_repository $VIM_VINEGAR_URL ".vim/bundle/vim-vinegar"
 
 if [ $solarized_flag -ne 0 ]; then
