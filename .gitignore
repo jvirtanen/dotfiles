@@ -16,8 +16,7 @@ vendor/bundle
 # Vim
 # ---
 
-*.swo
-*.swp
+*.sw?
 .netrw*
 
 # Finder
