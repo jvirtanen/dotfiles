@@ -38,3 +38,9 @@ tags
 # ----------
 
 env/
+
+# IntelliJ IDEA
+# -------------
+
+*.iml
+.idea/
