@@ -37,6 +37,15 @@ autocmd BufRead,BufNewFile Procfile set filetype=yaml
 set incsearch
 set hlsearch
 
+" Colors
+" ------
+
+let vimrc_colors = "$HOME/.vimrc.colors"
+
+if filereadable(expand(vimrc_colors))
+    exec "source ".vimrc_colors
+endif
+
 " External
 " --------
 

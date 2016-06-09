@@ -15,20 +15,20 @@ fi
 set -e
 
 usage() {
-  echo "Usage: install.bash [-f] [-s]"
+  echo "Usage: install.bash [-c] [-f]"
   exit 2
 }
 
+colors_flag=0
 force_flag=0
-solarized_flag=0
 
-while getopts :fs opt; do
+while getopts :cf opt; do
   case $opt in
+  c)
+    colors_flag=1
+    ;;
   f)
     force_flag=1
-    ;;
-  s)
-    solarized_flag=1
     ;;
   ?)
     usage
@@ -105,8 +105,8 @@ link_file ".tmux.conf"
 link_file ".vim"
 link_file ".vimrc"
 
-if [ $solarized_flag -ne 0 ]; then
-  copy_file ".vimrc.host.solarized" ".vimrc.host"
+if [ $colors_flag -ne 0 ]; then
+  copy_file ".vimrc.colors" ".vimrc.colors"
 fi
 
 VIM_PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim"
@@ -137,7 +137,7 @@ clone_repository $VIM_SCALA_URL ".vim/bundle/vim-scala"
 clone_repository $VIM_SLEUTH_URL ".vim/bundle/vim-sleuth"
 clone_repository $VIM_VINEGAR_URL ".vim/bundle/vim-vinegar"
 
-if [ $solarized_flag -ne 0 ]; then
+if [ $colors_flag -ne 0 ]; then
   VIM_COLORS_SOLARIZED="https://github.com/altercation/vim-colors-solarized.git"
 
   clone_repository $VIM_COLORS_SOLARIZED ".vim/bundle/vim-colors-solarized"
