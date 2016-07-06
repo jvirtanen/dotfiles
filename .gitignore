@@ -13,6 +13,12 @@ vendor/bundle
 
 .env
 
+# Leiningen
+# ---------
+
+.lein-repl-history
+.nrepl-port
+
 # Vim
 # ---
 
