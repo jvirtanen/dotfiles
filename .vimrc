@@ -25,11 +25,6 @@ set showmatch
 
 set autoindent
 
-" Filetypes
-" ---------
-
-autocmd BufRead,BufNewFile Procfile set filetype=yaml
-
 " Search
 " ------
 
