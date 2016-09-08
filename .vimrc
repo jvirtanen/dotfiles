@@ -28,7 +28,6 @@ set autoindent
 " Filetypes
 " ---------
 
-autocmd BufRead,BufNewFile *.ronn set filetype=markdown
 autocmd BufRead,BufNewFile Procfile set filetype=yaml
 
 " Search
