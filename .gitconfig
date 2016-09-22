@@ -14,6 +14,8 @@
 	numbered = true 
 [push]
 	default = current
+[rebase]
+	autoSquash = true
 [rerere] 
 	enabled = true 
 [status]
