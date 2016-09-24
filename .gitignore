@@ -3,11 +3,6 @@
 
 vendor/bundle
 
-# Foreman
-# -------
-
-.env
-
 # Leiningen
 # ---------
 
