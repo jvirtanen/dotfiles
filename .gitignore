@@ -19,11 +19,6 @@ vendor/bundle
 
 tags
 
-# chruby
-# ------
-
-.ruby-version
-
 # virtualenv
 # ----------
 
