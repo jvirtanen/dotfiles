@@ -3,11 +3,6 @@
 
 vendor/bundle
 
-# Clang/GCC
-# ---------
-
-*.dSYM/
-
 # Foreman
 # -------
 
