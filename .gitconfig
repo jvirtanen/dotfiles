@@ -1,5 +1,6 @@
 [alias] 
 	br = branch 
+	fu = commit --fixup
 	co = checkout 
 	st = status 
 [color] 
