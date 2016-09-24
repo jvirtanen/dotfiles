@@ -26,13 +26,6 @@ export CHRUBY="/usr/local/opt/chruby/share/chruby/chruby.sh"
 export GIT_COMPLETION="/usr/local/etc/bash_completion.d/git-completion.bash"
 export GIT_PROMPT="/usr/local/etc/bash_completion.d/git-prompt.sh"
 
-# Go
-# --
-
-export GOROOT="$(brew --prefix go)/libexec"
-
-export PATH="$GOROOT/libexec/bin:$PATH"
-
 # Homebrew
 # --------
 
