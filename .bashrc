@@ -69,13 +69,6 @@ if [ ! -z $GIT_PROMPT -a -r $GIT_PROMPT ]; then
   export PS1="\W \$(__git_ps1 '(%s) ')λ "
 fi
 
-# Go
-# --
-
-export GOPATH="$HOME/go"
-
-export PATH="$GOPATH/bin:$PATH"
-
 # virtualenv
 # ----------
 
