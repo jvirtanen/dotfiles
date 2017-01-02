@@ -89,10 +89,6 @@ clone_repository() {
   fi
 }
 
-create_directory "bin"
-
-link_file "bin/git-amend"
-
 link_file ".bash_profile"
 link_file ".bashrc"
 link_file ".bashrc.darwin"
