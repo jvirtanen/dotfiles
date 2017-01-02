@@ -15,8 +15,8 @@ alias open="$REATTACH_TO_USER_NAMESPACE open"
 alias textedit="open -e"
 alias vlc="open -a VLC"
 
-# chruby
-# ------
+# Ruby
+# ----
 
 export CHRUBY="/usr/local/opt/chruby/share/chruby/chruby.sh"
 

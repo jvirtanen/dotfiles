@@ -44,8 +44,8 @@ if [ $OS = "Linux" ]; then
   source "$HOME/.bashrc.linux"
 fi
 
-# chruby
-# ------
+# Ruby
+# ----
 
 if [ ! -z $CHRUBY -a -r $CHRUBY ]; then
   source $CHRUBY
