@@ -69,6 +69,11 @@ fi
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+# Path
+# ----
+
+export PATH="$HOME/bin:$PATH"
+
 # External
 # --------
 
@@ -77,8 +82,3 @@ export BASHRC_HOST="$HOME/.bashrc.host"
 if [ -r $BASHRC_HOST ]; then
   source $BASHRC_HOST
 fi
-
-# Path
-# ----
-
-export PATH="$HOME/bin:$PATH"
