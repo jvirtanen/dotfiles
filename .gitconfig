@@ -1,4 +1,5 @@
 [alias] 
+	amend = commit --amend --date="`date`"
 	br = branch 
 	fu = commit --fixup
 	co = checkout 
