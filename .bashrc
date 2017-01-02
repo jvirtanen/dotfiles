@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-# Path
-# ----
-
-export PATH="$HOME/bin:$PATH"
-
 # Prompt
 # ------
 
@@ -82,3 +77,8 @@ export BASHRC_HOST="$HOME/.bashrc.host"
 if [ -r $BASHRC_HOST ]; then
   source $BASHRC_HOST
 fi
+
+# Path
+# ----
+
+export PATH="$HOME/bin:$PATH"
