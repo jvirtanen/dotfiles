@@ -63,8 +63,8 @@ if [ ! -z $GIT_PROMPT -a -r $GIT_PROMPT ]; then
   export PS1="\W \$(__git_ps1 '(%s) ')λ "
 fi
 
-# virtualenv
-# ----------
+# Python
+# ------
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
