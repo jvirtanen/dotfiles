@@ -22,7 +22,6 @@ export EDITOR=$(command -v vim)
 # Aliases
 # -------
 
-alias bc="bundle console"
 alias be="bundle exec"
 alias bi="bundle install --path vendor/bundle"
 alias df="df -h"
