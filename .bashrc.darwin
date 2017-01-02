@@ -31,8 +31,8 @@ export GIT_PROMPT="/usr/local/etc/bash_completion.d/git-prompt.sh"
 
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# JVM
-# ---
+# Java
+# ----
 
 USR_LIBEXEC_JAVA_HOME="/usr/libexec/java_home"
 
