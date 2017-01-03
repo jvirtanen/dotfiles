@@ -1,5 +1,5 @@
 [alias] 
-	amend = commit --amend --date="`date`"
+	amend = !~/bin/git-amend
 	br = branch 
 	fu = commit --fixup
 	co = checkout 
