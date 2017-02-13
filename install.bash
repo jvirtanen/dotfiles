@@ -114,7 +114,7 @@ VIM_PATHOGEN_URL="https://raw.github.com/tpope/vim-pathogen/master/autoload/path
 download_file $VIM_PATHOGEN_URL ".vim/autoload/pathogen.vim"
 
 HTML5_VIM_URL="https://github.com/othree/html5.vim.git"
-SCSS_SYNTAX_VIM_URL="https://github.com/carebaker/scss-syntax.vim.git"
+SCSS_SYNTAX_VIM_URL="https://github.com/cakebaker/scss-syntax.vim.git"
 VIM_ANSIBLE_YAML_URL="https://github.com/chase/vim-ansible-yaml.git"
 VIM_CSS3_SYNTAX="https://github.com/hail2u/vim-css3-syntax.git"
 VIM_FUGITIVE_URL="https://github.com/tpope/vim-fugitive.git"
