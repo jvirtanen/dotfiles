@@ -1,25 +1,20 @@
 # Bundler
-# -------
 
 vendor/bundle
 
 # Vim
-# ---
 
 *.sw?
 .netrw*
 
 # Finder
-# ------
 
 .DS_Store
 
 # Exuberant Ctags
-# ---------------
 
 tags
 
 # Python
-# ------
 
 env/

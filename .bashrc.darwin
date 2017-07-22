@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
 # tmux
-# ----
 
 if command -v reattach-to-user-namespace >/dev/null; then
   REATTACH_TO_USER_NAMESPACE="reattach-to-user-namespace"
 fi
 
 # Aliases
-# -------
 
 alias ls="ls -G"
 alias open="$REATTACH_TO_USER_NAMESPACE open"
@@ -16,23 +14,19 @@ alias textedit="open -e"
 alias vlc="open -a VLC"
 
 # Ruby
-# ----
 
 export CHRUBY="/usr/local/opt/chruby/share/chruby/chruby.sh"
 
 # Git
-# ---
 
 export GIT_COMPLETION="/usr/local/etc/bash_completion.d/git-completion.bash"
 export GIT_PROMPT="/usr/local/etc/bash_completion.d/git-prompt.sh"
 
 # Homebrew
-# --------
 
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Java
-# ----
 
 USR_LIBEXEC_JAVA_HOME="/usr/libexec/java_home"
 
