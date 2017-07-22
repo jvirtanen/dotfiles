@@ -10,7 +10,7 @@ fi
 
 alias ls="ls -G"
 alias open="$REATTACH_TO_USER_NAMESPACE open"
-alias textedit="open -e"
+alias edit="open -e"
 alias vlc="open -a VLC"
 
 # Ruby
