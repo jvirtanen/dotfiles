@@ -22,7 +22,6 @@ alias bi="bundle install --path vendor/bundle"
 alias df="df -h"
 alias du="du -h"
 alias ll="ls -hl"
-alias serve="python -m SimpleHTTPServer"
 alias tags="ctags -R"
 alias vi="vim"
 
