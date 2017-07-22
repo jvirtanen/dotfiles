@@ -51,7 +51,7 @@ copy_file() {
 
     echo "Copy \"$to\""
   else
-    echo "$to: File exists"
+    echo "Skip \"$to\": File exists"
   fi
 }
 
@@ -66,7 +66,7 @@ link_file() {
 
     echo "Link \"$from\""
   else
-    echo "$from: File exists"
+    echo "Skip \"$from\": File exists"
   fi
 }
 
@@ -79,7 +79,7 @@ download_file() {
 
     echo "Download \"$to\""
   else
-    echo "$to: File exists"
+    echo "Skip \"$to\": File exists"
   fi
 }
 
