@@ -18,7 +18,6 @@ export EDITOR=$(command -v vim)
 
 # Aliases
 
-alias be="bundle exec"
 alias bi="bundle install --path vendor/bundle"
 alias df="df -h"
 alias du="du -h"
