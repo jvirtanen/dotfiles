@@ -2,13 +2,13 @@
 
 command -v curl >/dev/null
 if [ $? -ne 0 ]; then
-  echo "install.bash: curl: Command not found"
+  echo "curl: Command not found"
   exit 1
 fi
 
 command -v git >/dev/null
 if [ $? -ne 0 ]; then
-  echo "install.bash: git: Command not found"
+  echo "git: Command not found"
   exit 1
 fi
 
@@ -49,7 +49,7 @@ copy_file() {
   if [ ! -e $to -o $force_flag -ne 0 ]; then
     cp -f $from $to
   else
-    echo "install.bash: $to: File exists"
+    echo "$to: File exists"
   fi
 }
 
@@ -62,7 +62,7 @@ link_file() {
   if [ ! -e $from -o $force_flag -ne 0 ]; then
     ln -fns $to $from
   else
-    echo "install.bash: $from: File exists"
+    echo "$from: File exists"
   fi
 }
 
@@ -73,7 +73,7 @@ download_file() {
   if [ ! -e $to -o $force_flag -ne 0 ]; then
     curl --location --silent --show-error --output $to $from
   else
-    echo "install.bash: $to: File exists"
+    echo "$to: File exists"
   fi
 }
 
