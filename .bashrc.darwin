@@ -27,8 +27,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Java
 
-USR_LIBEXEC_JAVA_HOME="/usr/libexec/java_home"
-
-if [ -x $USR_LIBEXEC_JAVA_HOME ]; then
-  export JAVA_HOME=$($USR_LIBEXEC_JAVA_HOME)
+if [ -x /usr/libexec/java_home ]; then
+  export JAVA_HOME=$(/usr/libexec/java_home)
 fi
