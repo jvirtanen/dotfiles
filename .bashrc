@@ -58,6 +58,10 @@ fi
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+# GPG
+
+export GPG_TTY=$(tty)
+
 # Path
 
 export PATH="$HOME/bin:$PATH"
