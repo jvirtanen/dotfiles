@@ -30,7 +30,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 if [ -x /usr/libexec/java_home ]; then
   export JAVA_HOME=$(/usr/libexec/java_home --version "1.8")
 
-  if /usr/libexec/java_home --version "9" >/dev/null; then
-    alias jshell="JAVA_HOME=$(/usr/libexec/java_home --version "9") jshell"
+  if /usr/libexec/java_home --version "11" >/dev/null; then
+    alias jshell="JAVA_HOME=$(/usr/libexec/java_home --version "11") jshell"
   fi
 fi
