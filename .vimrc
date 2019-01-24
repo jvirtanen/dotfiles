@@ -1,7 +1,3 @@
-" Pathogen
-
-call pathogen#infect()
-
 " General
 
 set nocompatible
