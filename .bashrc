@@ -22,7 +22,7 @@ alias bi="bundle install --path vendor/bundle"
 alias df="df -h"
 alias du="du -h"
 alias ll="ls -hl"
-alias tags="ctags -R"
+alias tags="ctags --recurse"
 alias vi="vim"
 
 # Operating System
