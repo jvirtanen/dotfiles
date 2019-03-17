@@ -136,7 +136,7 @@ clone_repository $VIM_SLEUTH_URL "$pack/vim-sleuth"
 clone_repository $VIM_VINEGAR_URL "$pack/vim-vinegar"
 
 if [ $colors_flag -ne 0 ]; then
-  BASE16_VIM_URL="https://github.com/chriskempson/base16-vim.git"
+  BASE16_VIM_URL="https://github.com/jvirtanen/base16-vim.git"
 
   clone_repository $BASE16_VIM_URL "$pack/base16-vim"
 fi
