@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
-command -v curl >/dev/null
-if [ $? -ne 0 ]; then
+if ! command -v curl >/dev/null; then
   echo "curl: Command not found"
   exit 1
 fi
 
-command -v git >/dev/null
-if [ $? -ne 0 ]; then
+if ! command -v git >/dev/null; then
   echo "git: Command not found"
   exit 1
 fi
