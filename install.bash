@@ -44,8 +44,8 @@ copy_file() {
   local from="$1"
   local to="$HOME/$2"
 
-  if [ ! -e $to ] || [ $force_flag -ne 0 ]; then
-    cp -f $from $to
+  if [ ! -e "$to" ] || [ $force_flag -ne 0 ]; then
+    cp -f "$from" "$to"
 
     echo "Copy \"$to\""
   else
@@ -59,8 +59,8 @@ link_file() {
   local from="$HOME/$name"
   local to="$PWD/$name"
 
-  if [ ! -e $from ] || [ $force_flag -ne 0 ]; then
-    ln -fns $to $from
+  if [ ! -e "$from" ] || [ $force_flag -ne 0 ]; then
+    ln -fns "$to" "$from"
 
     echo "Link \"$from\""
   else
@@ -72,13 +72,13 @@ clone_repository() {
   local from=$1
   local to=$2
 
-  if [ ! -e $to ]; then
-    git clone --quiet $from $to
+  if [ ! -e "$to" ]; then
+    git clone --quiet "$from" "$to"
 
     echo "Clone \"$to\""
   else
-    git -C $to fetch --quiet
-    git -C $to reset --quiet --hard origin/master
+    git -C "$to" fetch --quiet
+    git -C "$to" reset --quiet --hard origin/master
 
     echo "Update \"$to\""
   fi
