@@ -44,7 +44,7 @@ copy_file() {
   local from="$1"
   local to="$HOME/$2"
 
-  if [ ! -e $to -o $force_flag -ne 0 ]; then
+  if [ ! -e $to ] || [ $force_flag -ne 0 ]; then
     cp -f $from $to
 
     echo "Copy \"$to\""
@@ -59,7 +59,7 @@ link_file() {
   local from="$HOME/$name"
   local to="$PWD/$name"
 
-  if [ ! -e $from -o $force_flag -ne 0 ]; then
+  if [ ! -e $from ] || [ $force_flag -ne 0 ]; then
     ln -fns $to $from
 
     echo "Link \"$from\""
