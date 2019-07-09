@@ -22,7 +22,7 @@ alias bi="bundle install --path vendor/bundle"
 alias df="df -h"
 alias du="du -h"
 alias ll="ls -hl"
-alias tags="ctags --exclude=node_modules --recurse"
+alias tags="ctags --exclude=node_modules --exclude=target --recurse"
 alias vi="vim"
 
 # Operating System
