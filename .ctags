@@ -1,3 +1,4 @@
+--exclude=env
 --exclude=node_modules
 --exclude=target
 --recurse
