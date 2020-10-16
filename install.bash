@@ -107,7 +107,6 @@ fi
 pack=".vim/pack/default/start"
 
 clone_repository "https://github.com/othree/html5.vim.git" "$pack/html5.vim"
-clone_repository "https://github.com/cakebaker/scss-syntax.vim.git" "$pack/scss-syntax.vim"
 clone_repository "https://github.com/chase/vim-ansible-yaml.git" "$pack/vim-ansible-yaml"
 clone_repository "https://github.com/hail2u/vim-css3-syntax.git" "$pack/vim-css3-syntax"
 clone_repository "https://github.com/tpope/vim-fugitive.git" "$pack/vim-fugitive"
