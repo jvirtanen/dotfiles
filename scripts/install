@@ -111,6 +111,7 @@ clone_repository "https://github.com/chase/vim-ansible-yaml.git" "$pack/vim-ansi
 clone_repository "https://github.com/hail2u/vim-css3-syntax.git" "$pack/vim-css3-syntax"
 clone_repository "https://github.com/tpope/vim-fugitive.git" "$pack/vim-fugitive"
 clone_repository "https://github.com/jvirtanen/vim-hcl.git" "$pack/vim-hcl"
+clone_repository "https://github.com/jvirtanen/vim-hocon.git" "$pack/vim-hocon"
 clone_repository "https://github.com/pangloss/vim-javascript.git" "$pack/vim-javascript"
 clone_repository "https://github.com/lepture/vim-jinja.git" "$pack/vim-jinja"
 clone_repository "https://github.com/elzr/vim-json.git" "$pack/vim-json"
