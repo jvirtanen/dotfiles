@@ -94,10 +94,13 @@ create_directory "bin"
 
 link_file "bin/git-amend"
 
+create_directory ".config/kitty"
+
 link_file ".bash_profile"
 link_file ".bashrc"
 link_file ".bashrc.darwin"
 link_file ".bashrc.linux"
+link_file ".config/kitty/kitty.conf"
 link_file ".ctags"
 link_file ".gitconfig"
 link_file ".gitignore"
