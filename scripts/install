@@ -72,13 +72,19 @@ clone_repository() {
   local from=$1
   local to=$2
 
+  local branch="master"
+
   if [ ! -e "$to" ]; then
     git clone --quiet "$from" "$to"
 
     echo "Clone \"$to\""
   else
+    if [ -n "$(git -C "$to" for-each-ref "refs/remotes/origin/main")" ]; then
+      branch="main"
+    fi
+
     git -C "$to" fetch --quiet
-    git -C "$to" reset --quiet --hard origin/master
+    git -C "$to" reset --quiet --hard "origin/$branch"
 
     echo "Update \"$to\""
   fi
