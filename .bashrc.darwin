@@ -3,14 +3,14 @@
 # tmux
 
 if command -v reattach-to-user-namespace >/dev/null; then
-  REATTACH_TO_USER_NAMESPACE="reattach-to-user-namespace"
+  reattach_to_user_namespace="reattach-to-user-namespace"
 fi
 
 # Aliases
 
-alias ls="ls -G"
-alias open="$REATTACH_TO_USER_NAMESPACE open"
 alias edit="open -e"
+alias ls="ls -G"
+alias open="$reattach_to_user_namespace open"
 
 # Ruby
 
@@ -27,10 +27,13 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Java
 
-if [ -x /usr/libexec/java_home ]; then
-  export JAVA_HOME=$(/usr/libexec/java_home --version "1.8")
+java_home="/usr/libexec/java_home"
 
-  if /usr/libexec/java_home --version "11" >/dev/null; then
-    alias jshell="JAVA_HOME=$(/usr/libexec/java_home --version "11") jshell"
+if [ -x "$java_home" ]; then
+  JAVA_HOME=$("$java_home" --version "1.8")
+  export JAVA_HOME
+
+  if "$java_home" --version "11" >/dev/null; then
+    alias jshell="JAVA_HOME=$("$java_home" --version "11") jshell"
   fi
 fi
