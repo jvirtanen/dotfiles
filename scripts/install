@@ -105,6 +105,7 @@ link_file ".hushlogin"
 link_file ".tmux.conf"
 link_file ".vim"
 link_file ".vimrc"
+link_file ".zshenv"
 
 if [ $colors_flag -ne 0 ]; then
   copy_file ".vimrc.colors" ".vimrc.colors"
