@@ -14,7 +14,8 @@ alias date="date +\"%Y-%m-%d %T\""
 
 # Editor
 
-export EDITOR=$(command -v vim)
+EDITOR=$(command -v vim)
+export EDITOR
 
 # Aliases
 
@@ -26,32 +27,38 @@ alias vi="vim"
 
 # Operating System
 
-export OS=$(uname -s)
+os=$(uname -s)
 
-if [ $OS = "Darwin" ]; then
+if [[ "$os" = "Darwin" ]]; then
   source "$HOME/.bashrc.darwin"
 fi
 
-if [ $OS = "Linux" ]; then
+if [[ "$os" = "Linux" ]]; then
   source "$HOME/.bashrc.linux"
 fi
 
 # Ruby
 
-if [ ! -z $CHRUBY -a -r $CHRUBY ]; then
-  source $CHRUBY
+if [[ -n "$CHRUBY" ]] && [[ -r "$CHRUBY" ]]; then
+  source "$CHRUBY"
 fi
+
+unset CHRUBY
 
 # Git
 
-if [ ! -z $GIT_COMPLETION -a -r $GIT_COMPLETION ]; then
-  source $GIT_COMPLETION
+if [[ -n "$GIT_COMPLETION" ]] && [[ -r "$GIT_COMPLETION" ]]; then
+  source "$GIT_COMPLETION"
 fi
 
-if [ ! -z $GIT_PROMPT -a -r $GIT_PROMPT ]; then
-  source $GIT_PROMPT
+unset GIT_COMPLETION
+
+if [[ -n "$GIT_PROMPT" ]] && [[ -r "$GIT_PROMPT" ]]; then
+  source "$GIT_PROMPT"
   export PS1="\W \$(__git_ps1 '(%s) ')λ "
 fi
+
+unset GIT_PROMPT
 
 # Python
 
@@ -59,7 +66,8 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # GPG
 
-export GPG_TTY=$(tty)
+GPG_TTY=$(tty)
+export GPG_TTY
 
 # Path
 
@@ -67,8 +75,8 @@ export PATH="$HOME/bin:$PATH"
 
 # External
 
-export BASHRC_HOST="$HOME/.bashrc.host"
+bashrc_host="$HOME/.bashrc.host"
 
-if [ -r $BASHRC_HOST ]; then
-  source $BASHRC_HOST
+if [[ -r "$bashrc_host" ]]; then
+  source "$bashrc_host"
 fi
