@@ -29,7 +29,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 java_home="/usr/libexec/java_home"
 
-if [ -x "$java_home" ]; then
+if [[ -x "$java_home" ]]; then
   JAVA_HOME=$("$java_home" --version "1.8")
   export JAVA_HOME
 
