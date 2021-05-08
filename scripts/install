@@ -44,7 +44,7 @@ copy_file() {
   local from="$1"
   local to="$HOME/$2"
 
-  if [ ! -e "$to" ] || [ $force_flag -ne 0 ]; then
+  if [[ ! -e "$to" ]] || [[ $force_flag -ne 0 ]]; then
     cp -f "$from" "$to"
 
     echo "Copy \"$to\""
@@ -59,7 +59,7 @@ link_file() {
   local from="$HOME/$name"
   local to="$PWD/$name"
 
-  if [ ! -e "$from" ] || [ $force_flag -ne 0 ]; then
+  if [[ ! -e "$from" ]] || [[ $force_flag -ne 0 ]]; then
     ln -fns "$to" "$from"
 
     echo "Link \"$from\""
@@ -74,12 +74,12 @@ clone_repository() {
 
   local branch="master"
 
-  if [ ! -e "$to" ]; then
+  if [[ ! -e "$to" ]]; then
     git clone --quiet "$from" "$to"
 
     echo "Clone \"$to\""
   else
-    if [ -n "$(git -C "$to" for-each-ref "refs/remotes/origin/main")" ]; then
+    if [[ -n "$(git -C "$to" for-each-ref "refs/remotes/origin/main")" ]]; then
       branch="main"
     fi
 
@@ -110,7 +110,7 @@ link_file ".vim"
 link_file ".vimrc"
 link_file ".zshenv"
 
-if [ $colors_flag -ne 0 ]; then
+if [[ $colors_flag -ne 0 ]]; then
   copy_file ".vimrc.colors" ".vimrc.colors"
 fi
 
@@ -130,6 +130,6 @@ clone_repository "https://github.com/tpope/vim-markdown.git" "$pack/vim-markdown
 clone_repository "https://github.com/tpope/vim-sleuth.git" "$pack/vim-sleuth"
 clone_repository "https://github.com/tpope/vim-vinegar.git" "$pack/vim-vinegar"
 
-if [ $colors_flag -ne 0 ]; then
+if [[ $colors_flag -ne 0 ]]; then
   clone_repository "https://github.com/jvirtanen/base16-vim.git" "$pack/base16-vim"
 fi
