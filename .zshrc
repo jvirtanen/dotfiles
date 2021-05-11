@@ -4,10 +4,6 @@
 
 bindkey -e
 
-# Prompt
-
-export PS1="%1/ λ "
-
 # Locale
 
 export LC_ALL="en_US.UTF-8"
@@ -44,6 +40,20 @@ chruby="/usr/local/opt/chruby/share/chruby/chruby.sh"
 if [[ -r $chruby ]]; then
   source $chruby
 fi
+
+# Git
+
+autoload -Uz compinit && compinit
+autoload -Uz vcs_info
+
+precmd() {
+  vcs_info
+}
+
+zstyle ':vcs_info:git:*' formats '(%b) '
+
+setopt PROMPT_SUBST
+PROMPT="%1/ \${vcs_info_msg_0_}λ "
 
 # Python
 
