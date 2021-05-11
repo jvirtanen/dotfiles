@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+# Keys
+
+bindkey -e
+
 # Prompt
 
 export PS1="%1/ λ "
