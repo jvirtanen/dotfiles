@@ -87,8 +87,8 @@ export PATH="$HOME/bin:$PATH"
 
 # External
 
-zshenv_host="$HOME/.zshenv.host"
+zshrc_host="$HOME/.zshrc.host"
 
-if [[ -r $zshenv_host ]]; then
-  source $zshenv_host
+if [[ -r $zshrc_host ]]; then
+  source $zshrc_host
 fi
