@@ -43,7 +43,7 @@ fi
 
 # Git
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -u
 autoload -Uz vcs_info
 
 precmd() {
