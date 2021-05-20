@@ -1,2 +1,2 @@
 [miscellany]
-global-ignores = .DS_Store
+global-ignores = .DS_Store tags
