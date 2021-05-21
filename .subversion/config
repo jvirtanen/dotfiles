@@ -1,2 +1,2 @@
 [miscellany]
-global-ignores = .DS_Store tags
+global-ignores = *.sw? .netrw* .DS_Store tags
