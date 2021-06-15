@@ -51,6 +51,7 @@ precmd() {
 }
 
 zstyle ':vcs_info:git:*' formats '(%b) '
+zstyle ':vcs_info:svn:*' formats '(%b) '
 
 setopt PROMPT_SUBST
 PROMPT="%1/ \${vcs_info_msg_0_}λ "
