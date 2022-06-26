@@ -43,7 +43,6 @@ fi
 
 # Git
 
-autoload -Uz compinit && compinit -u
 autoload -Uz vcs_info
 
 precmd() {
@@ -65,10 +64,6 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# Homebrew
-
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
 # Java
 
 java_home="/usr/libexec/java_home"
@@ -89,3 +84,13 @@ zshrc_host="$HOME/.zshrc.host"
 if [[ -r $zshrc_host ]]; then
   source $zshrc_host
 fi
+
+# Homebrew
+
+if type brew &>/dev/null; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:$FPATH"
+fi
+
+# Autocomplete
+
+autoload -Uz compinit && compinit -u
