@@ -57,6 +57,14 @@ if [[ -r $chruby ]]; then
   source $chruby
 fi
 
+# Node
+
+chnode="$brew_prefix/opt/chnode/share/chnode/chnode.sh"
+
+if [[ -r $chnode ]]; then
+  source $chnode
+fi
+
 # Git
 
 autoload -Uz vcs_info
