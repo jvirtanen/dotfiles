@@ -51,7 +51,7 @@ fi
 
 # Ruby
 
-chruby="/usr/local/opt/chruby/share/chruby/chruby.sh"
+chruby="$brew_prefix/opt/chruby/share/chruby/chruby.sh"
 
 if [[ -r $chruby ]]; then
   source $chruby
