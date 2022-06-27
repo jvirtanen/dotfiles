@@ -33,6 +33,22 @@ alias ll="ls -Ghl"
 alias open="$reattach_to_user_namespace open"
 alias vi="vim"
 
+# Homebrew
+
+if [[ $(uname -p) = 'arm' ]]; then
+  brew_prefix="/opt/homebrew"
+else
+  brew_prefix="/usr/local"
+fi
+
+brew="$brew_prefix/bin/brew"
+
+if [[ -x $brew ]]; then
+  eval "$($brew shellenv)"
+
+  FPATH="$brew_prefix/share/zsh/site-functions:$FPATH"
+fi
+
 # Ruby
 
 chruby="/usr/local/opt/chruby/share/chruby/chruby.sh"
@@ -83,12 +99,6 @@ zshrc_host="$HOME/.zshrc.host"
 
 if [[ -r $zshrc_host ]]; then
   source $zshrc_host
-fi
-
-# Homebrew
-
-if type brew &>/dev/null; then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:$FPATH"
 fi
 
 # Autocomplete
