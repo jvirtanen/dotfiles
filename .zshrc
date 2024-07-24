@@ -36,12 +36,7 @@ alias vi="vim"
 
 # Homebrew
 
-if [[ $(uname -p) = 'arm' ]]; then
-  brew_prefix="/opt/homebrew"
-else
-  brew_prefix="/usr/local"
-fi
-
+brew_prefix="/opt/homebrew"
 brew="$brew_prefix/bin/brew"
 
 if [[ -x $brew ]]; then
