@@ -17,10 +17,6 @@ set showmatch
 
 set autoindent
 
-" File Types
-
-autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
-
 " Search
 
 set incsearch
