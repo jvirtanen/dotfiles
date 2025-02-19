@@ -90,10 +90,6 @@ clone_repository() {
   fi
 }
 
-create_directory "bin"
-
-link_file "bin/git-amend"
-
 create_directory ".config/kitty"
 create_directory ".subversion"
 
