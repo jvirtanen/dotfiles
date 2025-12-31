@@ -89,7 +89,7 @@ export GPG_TTY
 java_home="/usr/libexec/java_home"
 
 if [[ -x "$java_home" ]]; then
-  JAVA_HOME=$("$java_home" --version "21")
+  JAVA_HOME=$("$java_home" --version "25")
   export JAVA_HOME
 fi
 
