@@ -90,9 +90,11 @@ clone_repository() {
   fi
 }
 
+create_directory ".config/ghostty"
 create_directory ".config/kitty"
 create_directory ".subversion"
 
+link_file ".config/ghostty/config.ghostty"
 link_file ".config/kitty/kitty.conf"
 link_file ".ctags"
 link_file ".gitconfig"

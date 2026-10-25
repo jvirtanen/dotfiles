@@ -1,0 +1,47 @@
+term = xterm-256color
+
+font-family = Source Code Pro
+font-size = 14
+
+background = #20201d
+foreground = #a6a28c
+
+# Black
+palette = 0=#20201d
+palette = 8=#7d7a68
+
+# Red
+palette = 1=#d73737
+palette = 9=#d73737
+
+# Green
+palette = 2=#60ac39
+palette = 10=#60ac39
+
+# Yellow
+palette = 3=#ae9513
+palette = 11=#ae9513
+
+# Blue
+palette = 4=#6684e1
+palette = 12=#6684e1
+
+# Magenta
+palette = 5=#b854d4
+palette = 13=#b854d4
+
+# Cyan
+palette = 6=#1fad83
+palette = 14=#1fad83
+
+# White
+palette = 7=#a6a28c
+palette = 15=#fefbec
+
+cursor-color = #a6a28c
+cursor-text = #20201d
+cursor-style-blink = false
+
+clipboard-trim-trailing-spaces = true
+
+bell-features = no-audio
